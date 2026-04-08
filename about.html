@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — ITO AI</title>
+  <meta name="description" content="ITO AI is a SaaS company that builds AI-powered software tools for automation, analytics, and digital productivity.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="logo">ITO <span>AI</span></a>
+    <div class="nav-links">
+      <a href="platform.html">Platform</a>
+      <a href="products.html">Products</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="pricing.html" class="nav-cta">Get Started</a>
+    </div>
+  </nav>
+
+  <div class="container page-top">
+    <p class="label reveal">About</p>
+    <h1 class="title reveal">We build software tools that work.</h1>
+    <p class="subtitle reveal">ITO AI is a SaaS company focused on building AI-powered tools for automation, analytics, and digital productivity.</p>
+  </div>
+
+  <!-- Mission -->
+  <section class="container section">
+    <div class="two-col">
+      <div class="reveal">
+        <h2 class="title-sm">Our mission</h2>
+        <p style="margin-top:1rem;">We exist to make powerful AI technology accessible through simple, well-designed software tools. No complexity for complexity's sake — just sharp tools that solve real problems.</p>
+        <p>Every product we build follows the same philosophy: automate the tedious, surface the meaningful, and stay out of the way.</p>
+      </div>
+      <div class="reveal">
+        <h2 class="title-sm">What we do</h2>
+        <p style="margin-top:1rem;">ITO AI develops and operates a SaaS platform that hosts multiple AI-powered software tools. Our products span automation, analytics, and digital productivity.</p>
+        <p>We are a <strong>software company</strong>. We build tools that help people and teams work more efficiently with the help of artificial intelligence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="container section">
+    <p class="label reveal">How we build</p>
+    <h2 class="title-sm reveal">Principles that guide us</h2>
+    <p class="subtitle reveal" style="margin-bottom:2.5rem;">These aren't buzzwords — they're the decisions we make every day.</p>
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="card-icon icon-indigo">C</div>
+        <h3>Clarity over hype</h3>
+        <p>We describe what our tools do in plain language. No inflated claims, no vague promises. If you can't understand it in 5 seconds, we haven't done our job.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon icon-green">U</div>
+        <h3>Utility first</h3>
+        <p>Every feature exists because it solves a real problem. We don't build features to pad a list — we build them because users need them.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon icon-orange">T</div>
+        <h3>Transparency</h3>
+        <p>Clear pricing, clear terms, clear refund policies. We believe trust is built through transparency, not marketing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform identity -->
+  <section class="container section">
+    <div class="two-col">
+      <div class="reveal">
+        <h2 class="title-sm">The platform approach</h2>
+        <p style="margin-top:1rem;">Instead of building disconnected products, we built a unified platform. Every tool shares the same infrastructure: one account, one dashboard, one billing system.</p>
+        <p>This means less friction for users and a more reliable experience across every tool. As we add new products, your existing account grows with the platform.</p>
+      </div>
+      <div class="reveal">
+        <ul class="feature-list">
+          <li><span class="check">&#10003;</span> Registered software company</li>
+          <li><span class="check">&#10003;</span> SaaS subscription model</li>
+          <li><span class="check">&#10003;</span> Secure payment processing</li>
+          <li><span class="check">&#10003;</span> Clear terms and refund policy</li>
+          <li><span class="check">&#10003;</span> Dedicated customer support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container" style="padding-bottom:5rem;">
+    <div class="cta-banner reveal">
+      <h2>Questions? Let's talk.</h2>
+      <p>We're happy to discuss our products, platform, or anything else.</p>
+      <a href="contact.html" class="btn btn-primary">Contact us</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">ITO <span>AI</span></a>
+          <p>AI-powered SaaS platform for automation, analytics, and digital productivity.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col"><h4>Platform</h4><a href="platform.html">How it works</a><a href="products.html">Products</a><a href="pricing.html">Pricing</a></div>
+          <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+          <div class="footer-col"><h4>Legal</h4><a href="terms.html">Terms of Service</a><a href="refund.html">Refund Policy</a><a href="privacy.html">Privacy Policy</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 ITO AI. All rights reserved.</span>
+        <div><a href="terms.html">Terms</a><a href="refund.html">Refunds</a><a href="privacy.html">Privacy</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const o = new IntersectionObserver(e => e.forEach(el => { if (el.isIntersecting) el.target.classList.add('visible'); }), { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => o.observe(el));
+  </script>
+</body>
+</html>
