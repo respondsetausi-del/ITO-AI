@@ -6,8 +6,8 @@ export default async function handler(req, res) {
   const { plan } = req.body;
 
   const plans = {
-    basic: { amount: 19900, description: 'ITO AI Basic — Monthly Subscription' },
-    pro: { amount: 49900, description: 'ITO AI Pro — Monthly Subscription' },
+    basic: { amount: 19900, description: 'AIP Solutions Basic — Monthly Subscription' },
+    pro: { amount: 49900, description: 'AIP Solutions Pro — Monthly Subscription' },
   };
 
   const selected = plans[plan];
@@ -25,7 +25,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         amount: selected.amount,
         currency: 'ZAR',
-        metadata: { plan: plan, product: 'ITO AI Subscription' },
+        metadata: { plan: plan, product: 'AIP Solutions Subscription' },
       }),
     });
 
