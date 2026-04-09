@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — ITO AI</title>
-  <meta name="description" content="Contact ITO AI for questions about our software tools, subscriptions, or partnerships.">
+  <meta name="description" content="Contact ITO AI for AI-powered websites, automation systems, custom tools, and business integrations.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,26 +12,30 @@
   <nav>
     <a href="index.html" class="logo">ITO <span>AI</span></a>
     <div class="nav-links">
-      <a href="platform.html">Platform</a>
-      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="use-cases.html">Use Cases</a>
       <a href="pricing.html">Pricing</a>
       <a href="about.html">About</a>
       <a href="contact.html" class="active">Contact</a>
-      <a href="pricing.html" class="nav-cta">Get Started</a>
+      <a href="contact.html" class="nav-cta">Get Started</a>
     </div>
   </nav>
 
   <div class="container page-top">
     <p class="label reveal">Contact</p>
-    <h1 class="title reveal">Get in touch</h1>
-    <p class="subtitle reveal">Questions about our software tools, subscriptions, or partnerships? We'd love to hear from you.</p>
+    <h1 class="title reveal">Let's build something</h1>
+    <p class="subtitle reveal">Tell us what you need — an AI website, automation system, custom tool, or integration. We'll scope it and get back to you.</p>
   </div>
 
   <section class="container" style="padding-bottom:5rem;">
     <div class="two-col" style="gap:4rem;">
       <!-- Form -->
       <div class="reveal">
-        <form class="form-grid" onsubmit="event.preventDefault();this.innerHTML='<p style=\'padding:2rem 0;color:var(--green);font-weight:600;\'>Message sent. We\'ll get back to you shortly.</p>';">
+        <form class="form-grid" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="New inquiry from ITO AI website">
+          <input type="hidden" name="from_name" value="ITO AI Website">
+          <input type="checkbox" name="botcheck" style="display:none;">
           <div>
             <label for="name">Full name</label>
             <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -41,19 +45,21 @@
             <input type="email" id="email" name="email" placeholder="you@example.com" required>
           </div>
           <div>
-            <label for="subject">Subject</label>
-            <select id="subject" name="subject">
+            <label for="topic">What do you need?</label>
+            <select id="topic" name="topic">
+              <option>AI Website</option>
+              <option>Automation System</option>
+              <option>Custom AI Tool</option>
+              <option>Business Integration</option>
               <option>General inquiry</option>
-              <option>Product question</option>
-              <option>Subscription & billing</option>
-              <option>Partnership</option>
-              <option>Support</option>
+              <option>Other</option>
             </select>
           </div>
           <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" placeholder="Describe the problem you're trying to solve or what you need built..." required></textarea>
           </div>
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
           <button type="submit" class="btn btn-primary">Send message</button>
         </form>
       </div>
@@ -68,8 +74,8 @@
         </div>
 
         <div style="margin-bottom:1.75rem;">
-          <p style="font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-dim);margin-bottom:0.35rem;">Support</p>
-          <a href="mailto:support@itoai.com" style="color:var(--accent);text-decoration:none;font-size:0.95rem;font-weight:600;">support@itoai.com</a>
+          <p style="font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-dim);margin-bottom:0.35rem;">WhatsApp</p>
+          <a href="https://wa.me/27000000000" style="color:var(--accent);text-decoration:none;font-size:0.95rem;font-weight:600;">Chat with us on WhatsApp</a>
         </div>
 
         <div style="margin-bottom:1.75rem;">
@@ -78,8 +84,8 @@
         </div>
 
         <div style="background:var(--surface);border-radius:var(--radius);padding:1.5rem;margin-top:2rem;">
-          <h4 style="font-size:0.85rem;font-weight:700;margin-bottom:0.5rem;">Before you write</h4>
-          <p style="font-size:0.82rem;color:var(--text-dim);line-height:1.6;">Check our <a href="pricing.html" style="color:var(--accent);">Pricing FAQ</a> for billing questions, or our <a href="refund.html" style="color:var(--accent);">Refund Policy</a> for refund-related inquiries.</p>
+          <h4 style="font-size:0.85rem;font-weight:700;margin-bottom:0.5rem;">What happens next?</h4>
+          <p style="font-size:0.82rem;color:var(--text-dim);line-height:1.7;">1. You tell us what you need<br>2. We scope the solution and send a clear proposal<br>3. You approve, we build and deploy</p>
         </div>
       </div>
     </div>
@@ -90,11 +96,11 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo">ITO <span>AI</span></a>
-          <p>We design and deliver AI-powered software tools for automation, analytics, and digital productivity.</p>
+          <p>We design and build AI-powered systems, tools, and websites for modern businesses.</p>
         </div>
         <div class="footer-cols">
-          <div class="footer-col"><h4>Platform</h4><a href="platform.html">How we build</a><a href="products.html">Our tools</a><a href="pricing.html">Pricing</a></div>
-          <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+          <div class="footer-col"><h4>Services</h4><a href="services.html">AI Websites</a><a href="services.html">Automation</a><a href="services.html">Custom Tools</a><a href="services.html">Integrations</a></div>
+          <div class="footer-col"><h4>Company</h4><a href="about.html">About</a><a href="use-cases.html">Use Cases</a><a href="contact.html">Contact</a></div>
           <div class="footer-col"><h4>Legal</h4><a href="terms.html">Terms of Service</a><a href="refund.html">Refund Policy</a><a href="privacy.html">Privacy Policy</a></div>
         </div>
       </div>
