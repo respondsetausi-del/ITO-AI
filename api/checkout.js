@@ -6,8 +6,9 @@ export default async function handler(req, res) {
   const { plan } = req.body;
 
   const plans = {
-    basic: { amount: 19900, description: 'AIP Solutions Basic — Monthly Subscription' },
-    pro: { amount: 49900, description: 'AIP Solutions Pro — Monthly Subscription' },
+    consult: { amount: 34900, description: 'AIP Solutions — Consultation Session' },
+    starter: { amount: 54900, description: 'AIP Solutions — Starter Build' },
+    growth: { amount: 149900, description: 'AIP Solutions — Growth Build' },
   };
 
   const selected = plans[plan];
